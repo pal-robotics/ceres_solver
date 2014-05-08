@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package>
+  <name>ceres_solver</name>
+  <version>1.8.0</version>
+  <description>A non-linear least squares minimizer.</description>
+
+  <maintainer email="hilario.tome@pal-robotics.com">Hilario Tome</maintainer>
+  <maintainer email="paul.mathieu@pal-robotics.com">Paul Mathieu</maintainer>
+
+  <author>Sameer Agarwal</author>
+  <author>Keir Mierle</author>
+
+  <license>BSD</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+</package>
