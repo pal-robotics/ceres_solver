@@ -302,6 +302,7 @@ endif(APPLE AND CMAKE_CXX_COMPILER_ID STREQUAL "Clang")
 set(libs ceres)
 if(MINIGLOG)
   list(APPEND libs miniglog)
+  set(MINIGLOG_INCL ${CMAKE_CURRENT_SOURCE_DIR}/internal/ceres/miniglog)
 else()
   list(APPEND deps GLOG)
 endif()
@@ -316,7 +317,7 @@ if(BLAS_FOUND AND LAPACK_FOUND)
 endif()
 
 catkin_package(
-  INCLUDE_DIRS include
+  INCLUDE_DIRS include ${MINIGLOG_INCL}
   LIBRARIES ${libs}
   DEPENDS ${deps}
 )
